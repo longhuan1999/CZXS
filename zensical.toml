@@ -8,6 +8,10 @@ docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
 dev_addr = "localhost:8000"
+repo_url = "https://github.com/longhuan1999/CZXS"
+repo_name = "纯稚学说"
+edit_uri = "edit/main/docs"
+extra_javascript = ["javascripts/external-links.js"]
 
 [project.theme]
 language = "zh"
@@ -15,6 +19,7 @@ features = [
   "navigation.sections",   # 侧边栏按分组折叠
   "navigation.top",        # 回到顶部按钮
   "toc.follow",            # 右侧目录跟随滚动
+  "content.action.edit",   # 启用页面编辑按钮
 ]
 
 # 常用 Markdown 扩展（表格、提示块、代码块等）
@@ -27,14 +32,13 @@ markdown_extensions = [
 
 # 侧边导航：第一项即首页（/）
 nav = [
-  { "前言" = "前言.md" },
   { "学说" = [
       { "1 波根二象性" = "波根二象性.md" },
       { "2 错位时空假说" = "错位时空假说.md" },
       { "3 人格分裂假说" = "人格分裂假说.md" },
       { "4 刻舟求剑说" = "刻舟求剑说.md" },
       { "5 削足适履说" = "削足适履说.md" },
-      { "6 麦壳说" = "麦壳说.md" },
+      { "6 麦亮说" = "麦亮说.md" },
       { "7 痛爽说" = "痛爽说.md" },
       { "8 伪骨科学说" = "伪骨科学说.md" },
       { "9 四人假说" = "四人假说.md" },
@@ -63,5 +67,5 @@ nav = [
   { "整理者夹带私货" = [
       { "调频说" = "调频说.md" },
   ]},
-  { "来源列表" = "来源列表.md" },
+  { "课件来源清单" = "课件来源清单.md" },
 ]
