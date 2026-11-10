@@ -5,7 +5,10 @@
 site_url = "https://czxs-production.up.railway.app"
 site_name = "纯稚学 · 纯稚怎么翻译？"
 site_description = "百家争鸣：用各自的专业拆解《后会友期》里白小纯与青稚的词不达意"
-copyright = "&copy; 2026 公共"
+copyright = """
+  &copy; 2026 公共
+  <a href="#__consent">修改 cookie 设置</a>
+"""
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
@@ -104,38 +107,6 @@ property = "G-X1ZDQMMRTK"
 title = "这页内容对你有帮助吗？"
 
 [[project.extra.analytics.feedback.ratings]]
-icon = "material/star-outline"
-name = "1 星 - 完全没用"
-data = 1
-note = """
-抱歉没能帮到你，欢迎<a href='/feedback' target="_blank" rel="noopener">告诉我们哪里可以改进</a>。
-"""
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/star-outline"
-name = "2 星 - 帮助不大"
-data = 2
-note = "收到，我们会继续完善这一页。"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/star-outline"
-name = "3 星 - 一般"
-data = 3
-note = "感谢评价，我们会继续改进。"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/star-outline"
-name = "4 星 - 有帮助"
-data = 4
-note = "谢谢你的肯定！"
-
-[[project.extra.analytics.feedback.ratings]]
-icon = "material/star-outline"
-name = "5 星 - 非常有用"
-data = 5
-note = "太好了，感谢支持！"
-
-[[project.extra.analytics.feedback.ratings]]
 icon = "material/heart"
 name = "有帮助"
 data = 1
@@ -146,5 +117,5 @@ icon = "material/heart-broken"
 name = "没有帮助/有意见"
 data = 0
 note = """
-  感谢你的反馈！请通过 <a href="https://github.com/longhuan1999/CZXS/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">提交意见</a> 帮助我们改善内容。
+  感谢你的反馈！如果可以，请通过 <a href="https://github.com/longhuan1999/CZXS/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">提交意见</a> 帮助我们改善内容。
 """
