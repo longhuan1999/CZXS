@@ -2,8 +2,10 @@
 # 文档：https://zensical.org/
 
 [project]
+site_url = "https://czxs-production.up.railway.app"
 site_name = "纯稚学 · 纯稚怎么翻译？"
 site_description = "百家争鸣：用各自的专业拆解《后会友期》里白小纯与青稚的词不达意"
+copyright = "&copy; 2026 公共"
 docs_dir = "docs"
 site_dir = "site"
 use_directory_urls = true
@@ -13,32 +15,17 @@ repo_name = "纯稚学说"
 edit_uri = "edit/main/docs"
 extra_javascript = ["javascripts/external-links.js"]
 
-[project.theme]
-language = "zh"
-features = [
-  "navigation.sections",   # 侧边栏按分组折叠
-  "navigation.top",        # 回到顶部按钮
-  "toc.follow",            # 右侧目录跟随滚动
-  "content.action.edit",   # 启用页面编辑按钮
-]
-
-# 常用 Markdown 扩展（表格、提示块、代码块等）
-markdown_extensions = [
-  "tables",
-  "admonition",
-  "toc",
-  "pymdownx.superfences",
-]
-
 # 侧边导航：第一项即首页（/）
 nav = [
+  { "前言" = "index.md" },
+  { "课件来源清单" = "课件来源清单.md" },
   { "学说" = [
       { "1 波根二象性" = "波根二象性.md" },
       { "2 错位时空假说" = "错位时空假说.md" },
       { "3 人格分裂假说" = "人格分裂假说.md" },
       { "4 刻舟求剑说" = "刻舟求剑说.md" },
       { "5 削足适履说" = "削足适履说.md" },
-      { "6 麦亮说" = "麦亮说.md" },
+      { "6 电竞圈的麦亮说" = "电竞圈的麦亮说.md" },
       { "7 痛爽说" = "痛爽说.md" },
       { "8 伪骨科学说" = "伪骨科学说.md" },
       { "9 四人假说" = "四人假说.md" },
@@ -49,11 +36,11 @@ nav = [
       { "14 结果倒推论" = "结果倒推论.md" },
       { "15 磁铁论" = "磁铁论.md" },
       { "16 教育心理学角度" = "教育心理学角度.md" },
-      { "17 竞男语言" = "竞男语言.md" },
+      { "17 竞男语言表达模式解析" = "竞男语言表达模式解析.md" },
       { "18 全国文明宿舍理论" = "全国文明宿舍理论.md" },
       { "19 共用语言系统" = "共用语言系统.md" },
       { "20 梅拉宾法则" = "梅拉宾法则.md" },
-      { "21 雏鸟情结印刻效应" = "雏鸟情结印刻效应.md" },
+      { "21 雏鸟情结/印刻效应" = "雏鸟情结.md" },
       { "22 乡土中国" = "乡土中国.md" },
       { "23 黄铜胆瓶论" = "黄铜胆瓶论.md" },
       { "24 pseudo-apology 伪道歉" = "pseudo-apology伪道歉.md" },
@@ -67,5 +54,35 @@ nav = [
   { "整理者夹带私货" = [
       { "调频说" = "调频说.md" },
   ]},
-  { "课件来源清单" = "课件来源清单.md" },
+]
+
+[project.theme]
+language = "zh"
+features = [
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.sections",   # 侧边栏按分组折叠
+  "navigation.indexes",
+  "navigation.path",
+  "navigation.top",        # 回到顶部按钮
+  "navigation.footer",
+  "toc.follow",            # 右侧目录跟随滚动
+  "content.action.edit",   # 启用页面编辑按钮
+]
+
+# 常用 Markdown 扩展（表格、提示块、代码块等）
+markdown_extensions = [
+  "tables",
+  "admonition",
+  "toc",
+  "pymdownx.superfences",
+]
+
+
+[[project.markdown_extensions.zensical.extensions.preview.configurations]]
+targets.include = [
+  "*",
 ]
