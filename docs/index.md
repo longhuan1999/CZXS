@@ -6,7 +6,7 @@
 
 更专业的纯稚学术交流平台：
 
- - [春知网](https://purezhi.pages.dev/)
+ - [@西苏Sisu](https://xhslink.cn/o/Acjjyr2k56D).[🌐春知网](https://purezhi.com/).[网站]
 
 整理者：豆包、endless小龙
 
